@@ -1,0 +1,231 @@
+#body
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 926px;
+}
+
+h1{
+	color: #666666;
+    font: 25px/140% Helvetica,Arial,sans-serif;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.fontSizeH2
+{
+	color: #666666;
+    font: 20px Helvetica,Arial,sans-serif;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+h3, .fontSizeH3{
+	color: #666666;
+    font: 15px Helvetica,Arial,sans-serif;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+p{
+	color: #666666;
+    font: 13px/160% Arial,Helvetica,sans-serif;
+}
+
+a {
+	text-decoration: underline;
+	color: #666666;
+}
+
+.margin5
+{
+	margin: 5px;
+}
+
+#HeaderDiv{
+border-bottom: 1px solid #CC2222;
+width:100%;
+}
+
+#footerDiv{
+border-top: 1px solid #CC2222;
+width:100%;
+}
+
+#headerImageDiv{
+	float: right;	
+}
+
+.clearDiv{
+	clear:both;
+}
+
+#headerImg{
+	border: 1px #666666;
+	position:relative;
+}
+
+#ContentDiv{
+	margin-top: 20px;	
+	margin-bottom: 20px;	
+	width: 926px;
+}
+
+#menucontainer1 {
+	width: 174px;
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#galleryContainer{
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 10px;
+	width: 202px;
+	float: right;
+}
+
+.gallery{
+	float:left;
+	height: 38px;
+	width: 38px;
+	margin: 0 5px 5px 0;
+}
+
+.gallery img
+{
+	padding: 3px;
+	border: 1px solid #CCCCCC;
+	display: block;
+}
+
+#ContentContainer{
+	float: right;
+    width: 510px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.centered
+{
+	text-align: center;
+}
+
+.menu{
+	color: #777777;
+	text-decoration: none;
+	float: right;
+}
+
+.overlay{
+    background:transparent url(../img/overlay.png) repeat top left;
+    position:absolute;
+    top:0px;
+    bottom:-700px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+
+.openedGallery{
+    top:-200px;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:15px;
+    z-index:101;
+    width: 640px;
+    height: 640px;
+}
+
+.boxClose
+{
+	cursor: pointer;
+	position:absolute;
+    top:25px;
+    right:25px;
+    width: 22px;
+    height: 22px;
+}
+
+.galleryChangeImg {
+	z-index: 30;
+}
+
+#galleryPrevImg, #galleryNextImg
+{
+	height: 58px;
+    position: absolute;
+    top: 40%;
+    width: 27px;
+    z-index: 50;
+    cursor: pointer;	
+}
+
+#galleryPrevImg{
+	left: 30px;
+}
+
+#galleryNextImg{
+	right: 30px;
+}
+
+.arrowDownBlack {
+    background: url("../img/arrow_black.png") no-repeat scroll center center transparent;
+    display: inline-block;
+    height: 8px;
+    width: 15px;
+}
+.arrowUpBlack {
+    background: url("../img/arrow_black_up.png") no-repeat scroll center center transparent;
+    display: inline-block;
+    height: 8px;
+    width: 15px;
+}
+
+.centerDisplayed
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.centerVerlicalDispayed
+{
+	display: table-cell; vertical-align: middle
+}
+
+.arrowPositionTop
+{
+	position:absolute;
+	top:200px;	
+}
+
+.right100
+{
+	right: 100px;	
+}
+
+.left100
+{
+	left: 100px;	
+}
+
+.marginTop10
+{
+	margin-top:10px;
+}
+
+.bold{
+	font-weight: 500;
+}
+
+.bold600{
+	font-weight: 600;
+}
+
+.underline
+{
+	text-decoration:underline;	
+}
+
