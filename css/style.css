@@ -1,4 +1,14 @@
-#body
+@font-face {
+	font-family: Neou;
+	src: url('../fonts/Neou-Thin.otf');
+}
+@font-face {
+	font-family: NeouBold;
+	font-weight: bold;
+	src: url('../fonts/Neou-Bold.otf');
+}
+
+body
 {
 	margin-left: auto;
 	margin-right: auto;
@@ -6,36 +16,78 @@
 }
 
 h1{
-	color: #666666;
-    font: 25px/140% Helvetica,Arial,sans-serif;
+	color: #005A82;
+    font: 21pt NeouBold,Helvetica;
     margin-top: 0px;
     margin-bottom: 5px;
     padding: 0;
 }
 .fontSizeH2
 {
-	color: #666666;
-    font: 20px Helvetica,Arial,sans-serif;
+	color: #969696;
+    font: 20px NeouBold,Helvetica;
     margin-top: 0px;
     margin-bottom: 5px;
     padding: 0;
 }
 h3, .fontSizeH3{
-	color: #666666;
-    font: 15px Helvetica,Arial,sans-serif;
+	color: #969696;
+    font: 14pt NeouBold, Helvetica;
     margin-top: 0px;
     margin-bottom: 5px;
     padding: 0;
 }
 
-p{
+p {
 	color: #666666;
     font: 13px/160% Arial,Helvetica,sans-serif;
 }
 
+footer {
+	width:100%;
+}
+
 a {
 	text-decoration: underline;
-	color: #666666;
+	color: #969696;
+}
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul li {
+	height: 35px;
+	margin-top: 15px;
+}
+
+ul li {
+	border-bottom: 1px dashed #64A0BE;
+}
+
+ul li:hover, ul li.selected {
+	border-bottom: 1px dashed #005A82;
+}
+
+ul li:first-child {
+	margin-top: 0px;
+}
+
+a.menu {
+	text-decoration: none;
+	font-family: Neou;
+	font-size: 14pt;
+	color: #64A0BE;
+	float: right;
+}
+
+a.menu:hover, ul li.selected a {
+	text-decoration: none;
+	font-family: NeouBold;
+	font-size: 18pt;
+	color: #005A82;
+	float: right;
 }
 
 .margin5
@@ -43,27 +95,8 @@ a {
 	margin: 5px;
 }
 
-#HeaderDiv{
-border-bottom: 1px solid #CC2222;
-width:100%;
-}
-
-#footerDiv{
-border-top: 1px solid #CC2222;
-width:100%;
-}
-
-#headerImageDiv{
-	float: right;	
-}
-
 .clearDiv{
 	clear:both;
-}
-
-#headerImg{
-	border: 1px #666666;
-	position:relative;
 }
 
 #ContentDiv{
@@ -72,20 +105,33 @@ width:100%;
 	width: 926px;
 }
 
-#menucontainer1 {
+#MenuContainer {
 	width: 174px;
-	border-bottom: 1px solid #DDDDDD;
-	padding-bottom: 10px;
 	float: left;
 }
 
-#galleryContainer{
-	border-bottom: 1px solid #DDDDDD;
-	padding-bottom: 10px;
-	width: 202px;
-	float: right;
+#GalleryContainer {
+	height: 86px;
+	padding-top: 5px;
 }
 
+.aside {
+	padding-bottom: 10px;
+	width: 202px;
+}
+
+.border {
+	border-bottom: 1px dashed #969696;
+}
+
+.paddingTop10 {
+	padding-top: 10px;
+}
+
+.floatRight{
+	float: right;
+}
+	
 .gallery{
 	float:left;
 	height: 38px;
@@ -93,10 +139,9 @@ width:100%;
 	margin: 0 5px 5px 0;
 }
 
-.gallery img
-{
+.gallery img {
 	padding: 3px;
-	border: 1px solid #CCCCCC;
+	border: 1px solid #969696;
 	display: block;
 }
 
@@ -110,12 +155,6 @@ width:100%;
 .centered
 {
 	text-align: center;
-}
-
-.menu{
-	color: #777777;
-	text-decoration: none;
-	float: right;
 }
 
 .overlay{
