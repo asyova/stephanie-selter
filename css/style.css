@@ -8,39 +8,54 @@
 	src: url('../fonts/Neou-Bold.otf');
 }
 
-body
-{
+body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 926px;
 }
 
+img {
+	border: none;
+}
+
 h1{
 	color: #005A82;
-    font: 21pt NeouBold,Helvetica;
+    font: 21pt NeouBold;
     margin-top: 0px;
     margin-bottom: 5px;
     padding: 0;
 }
-.fontSizeH2
+.fontSizeH2, h2
 {
 	color: #969696;
-    font: 20px NeouBold,Helvetica;
+    font: 20px NeouBold;
     margin-top: 0px;
     margin-bottom: 5px;
     padding: 0;
 }
 h3, .fontSizeH3{
 	color: #969696;
-    font: 14pt NeouBold, Helvetica;
+    font: 14pt NeouBold;
     margin-top: 0px;
     margin-bottom: 5px;
     padding: 0;
 }
 
-p {
-	color: #666666;
-    font: 13px/160% Arial,Helvetica,sans-serif;
+h4, .fontSizeH4 {
+	color: #64A0BE;
+    font-size: 14pt;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+p, .text {
+	font-size: 14pt;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    color: Black;
 }
 
 footer {
@@ -48,8 +63,7 @@ footer {
 }
 
 a {
-	text-decoration: underline;
-	color: #969696;
+	text-decoration: none;
 }
 ul{
 	list-style-type: none;
@@ -90,9 +104,14 @@ a.menu:hover, ul li.selected a {
 	float: right;
 }
 
-.margin5
+.marginBottom10
 {
-	margin: 5px;
+	margin-bottom: 10px;
+}
+
+.marginTop10
+{
+	margin-top: 10px;
 }
 
 .clearDiv{
@@ -115,6 +134,9 @@ a.menu:hover, ul li.selected a {
 	padding-top: 5px;
 }
 
+.italic {
+	font-style:italic;	
+}
 .aside {
 	padding-bottom: 10px;
 	width: 202px;
@@ -124,8 +146,16 @@ a.menu:hover, ul li.selected a {
 	border-bottom: 1px dashed #969696;
 }
 
+.borderBottomH4Color {
+	border-bottom: 1px dashed #64A0BE;
+}
+
 .paddingTop10 {
 	padding-top: 10px;
+}
+
+.paddingBottom5 {
+	padding-bottom: 5px;
 }
 
 .floatRight{
@@ -147,9 +177,9 @@ a.menu:hover, ul li.selected a {
 
 #ContentContainer{
 	float: right;
-    width: 510px;
-    margin-right: 20px;
-    margin-left: 20px;
+    width: 500px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .centered
@@ -209,17 +239,17 @@ a.menu:hover, ul li.selected a {
 	right: 30px;
 }
 
-.arrowDownBlack {
-    background: url("../img/arrow_black.png") no-repeat scroll center center transparent;
+.arrowDown {
+    background: url("../img/icon_arrow_down.png") no-repeat scroll center center transparent;
     display: inline-block;
-    height: 8px;
-    width: 15px;
+    height: 7px;
+    width: 9px;
 }
-.arrowUpBlack {
-    background: url("../img/arrow_black_up.png") no-repeat scroll center center transparent;
+.arrowUp {
+    background: url("../img/icon_arrow_right.png") no-repeat scroll center center transparent;
     display: inline-block;
-    height: 8px;
-    width: 15px;
+    height: 9px;
+    width: 7px;
 }
 
 .centerDisplayed
@@ -268,3 +298,7 @@ a.menu:hover, ul li.selected a {
 	text-decoration:underline;	
 }
 
+.column1 {
+	width: 150px; 
+	float:left;
+}

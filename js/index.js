@@ -30,14 +30,16 @@ $(function () {
 	});
 
 	$('.moreText').click(function () {
-		$(this).next().toggle();
+		$(this).parent().next().toggle();
 		var objArrow = $(this).prev();
 		var arrowClass = objArrow.attr("class");
-		if (arrowClass.indexOf('arrowDownBlack') != -1) {
-			objArrow.removeClass('arrowDownBlack').addClass('arrowUpBlack');
+		if (arrowClass.indexOf('arrowUp') != -1) {
+			objArrow.removeClass('arrowUp').addClass('arrowDown');
+			objArrow.parent().addClass('borderBottomH4Color paddingBottom5');
 		}
 		else {
-			objArrow.removeClass('arrowUpBlack').addClass('arrowDownBlack');
+			objArrow.removeClass('arrowDown').addClass('arrowUp');
+			objArrow.parent().removeClass('borderBottomH4Color paddingBottom5');
 		}
 	});
 
