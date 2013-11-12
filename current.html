@@ -8,7 +8,7 @@
 
 	<link href="./css/style.css" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="./css/jquery.lightbox-0.5.css" media="screen" />
-	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
 	
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="./js/index.js" type="text/javascript"></script>
@@ -16,7 +16,7 @@
 
 <body>
 	<header>  
-		<a href="Index.html">       
+		<a name="headerImage" href="index.html">       
 			<img alt="header image" src="./img/header.png" style="margin-bottom: 10px; "/>
 		</a>
     </header>
@@ -37,44 +37,44 @@
             <h3>IN BEWEGUNG</h3>
             <div id="GalleryContainer">
                 <div class="gallery">
-                    <a href="#" data-image="./img/img1.JPG">
-                        <img src="./img/img1_small.JPG" />
+                    <a href="#" data-image="./img/bild5.jpg">
+                        <img src="./img/bild5_small.jpg" />
                     </a>
                 </div>
                 <div class="gallery">
-                    <a href="#" data-image="./img/img3.JPG">
-                        <img src="./img/img3_small.JPG" />
+                    <a href="#" data-image="./img/bild1.jpg">
+                        <img src="./img/bild1_small.jpg" />
                     </a>
                 </div>
                 <div class="gallery">
-                    <a href="#" data-image="./img/img2.JPG">
-                        <img src="./img/img2_small.JPG" />
+                    <a href="#" data-image="./img/bild2.jpg">
+                        <img src="./img/bild2_small.jpg" />
                     </a>
                 </div>
                 <div class="gallery">
-                    <a href="#" data-image="./img/img4.JPG">
-                        <img src="./img/img4_small.JPG" />
+                    <a href="#" data-image="./img/bild4.jpg">
+                        <img src="./img/bild4_small.jpg" />
                     </a>
                 </div>
                 <div class="gallery">
-                <a href="#" data-image="./img/img4.JPG">
-                    <img src="./img/img1_small.JPG" />
+                <a href="#" data-image="./img/bild3.jpg">
+                    <img src="./img/bild3_small.jpg" />
                     </a>
                 </div>
                 <div class="gallery">
-                <a href="#" data-image="./img/img4.JPG">
-                    <img src="./img/img3_small.JPG" />
+                <a href="#" data-image="./img/bild6.jpg">
+                    <img src="./img/bild6_small.jpg" />
                     </a>
                 </div>
                 <div class="gallery">
-                <a href="#" data-image="./img/img4.JPG">
-                    <img src="./img/img1_small.JPG" />
+                <a href="#" data-image="./img/bild7.jpg">
+                    <img src="./img/bild7_small.jpg" />
                     </a>
                 </div>
                 <div class="gallery">
-                <a href="#" data-image="./img/img4.JPG">
-                    <img src="./img/img4_small.JPG" />
-                    </a>
+                <a href="#" data-image="./img/bild8.jpg">
+                    <img src="./img/bild8_small.jpg" />
+                </a>
                 </div>
             </div>
         </div>
@@ -94,8 +94,8 @@
     </div>
     <!-- end aside -->
 <div id="ContentContainer">
-	<h1>Aktuell</h1>
-	<!--<h2>Frisch Serviert.</h2>-->
+	<h1>Alle Termine.</h1>
+	<div class="subtitle">Frisch Serviert.</div>
 	<div class="margin5">
 	<p>
 	    Probestunden sind jeder Zeit möglich.
@@ -123,7 +123,6 @@
 	    Im Studio 3, Nürnberg
 	</p>
     <div class="fontSizeH4 borderBottomH4Color paddingBottom5">Körpertraining/Tanz</div>
-	<p class="bold600">ab September 2013</p>
 	<div class="text column1">Jeden Mittwoch </div>
 	<div class="text italic">17:00 - 18:00 Uhr und 19:15 - 20:15 Uhr</div>
 	<p>
@@ -141,6 +140,10 @@
 	    zu Ihnen nach Hause.</text>
 	</p>
 	</div>
+	
+	<div id="top" class="marginTop10">
+        <a href="#headerImage" class="fontSizeH4">TOP <span class="arrowTop"></span></a>  
+    </div>
 </div>   
 <div class="clearDiv"></div>
 </div>
@@ -148,22 +151,22 @@
 <footer>
 
 <!-- Overlay div gallery -->
-<div class="overlay" id="overlay" style="display:none;">
+<div id="overlay" style="display:none;">
 	<div id="gallery">
-	    
-	        <div id="boxClose" style="right:40px;">
-		        <img class="boxClose" alt="Close Galerry" src="./img/icon_close_22x22.png" />
+        <div class="centerDisplayed width800">
+            <div id="galleryNext" class="galleryChangeImg floatRight" style="height:200px;">
+                <div id="boxClose">
+	                <img class="boxClose" alt="Close Galerry" src="./img/icon_close.png" />
+	            </div>
+	            <img id="galleryNextImg" src="./img/Arrow_right_inactiv.png" />
+            </div>
+            <div id="galleryImg" class="floatRight">
+                 <img id="imageToShow" class="centerDisplayed" />
 	        </div>
-	    <div class="marginTop10 centerDisplayed" >
-             <img id="imageToShow" class="centerDisplayed" />
-	    </div>
-	        <div class="galleryChangeImg arrowPositionTop left100">
-		        <img id="galleryPrevImg" src="./img/arrow_left_gray_27x58.png" />
-	        </div>
-	        <div class="galleryChangeImg arrowPositionTop right100">
-		        <img id="galleryNextImg" src="./img/arrow_right_gray_27x58.png" />
-	        </div>
-	    
+	        <div id="galleryPrev" class="galleryChangeImg floatRight">
+	            <img id="galleryPrevImg" src="./img/Arrow_left_inactiv.png" />
+            </div>
+        </div>
     </div>
 </div>
 
